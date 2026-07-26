@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primaryBlush: #d2c3c0;
+  --color-secondaryBlush: #c7a6a7;
+  --color-dustyRose: #b58482;
+  --color-ivory: #faf7f4;
+  --color-warmBeige: #efe4de;
+  --color-charcoal: #2e2927;
+  --color-mutedText: #6f625f;
+
+  --font-script: "Great Vibes", cursive;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --shadow-soft: 0 4px 24px -4px rgba(46, 41, 39, 0.08);
+  --shadow-card: 0 8px 32px -8px rgba(46, 41, 39, 0.12);
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal);
+  background-color: var(--color-ivory);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #c7a6a7 0%, #b58482 100%);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #b58482 0%, #a67573 100%);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.cta-gradient {
+  background: linear-gradient(135deg, #c7a6a7 0%, #b58482 50%, #d2c3c0 100%);
+}
+
+.glass-card {
+  background: rgba(250, 247, 244, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.hero-blush-bg {
+  background-color: var(--color-primaryBlush);
+  opacity: 0.12;
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.float-card {
+  animation: floatCard 5s ease-in-out infinite;
+}
+
+.coach-photo {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center center;
+  image-rendering: auto;
+}
+
+.card-base {
+  border-radius: 1rem;
+  background-color: var(--color-ivory);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid color-mix(in srgb, var(--color-warmBeige) 80%, transparent);
+  transition: all 0.3s ease;
+}
+
+.card-base:hover {
+  box-shadow: var(--shadow-card);
+  transform: translateY(-4px);
+}
+
+.section-heading::before,
+.section-heading::after {
+  content: "";
+  flex: 1;
+  max-width: 5rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-secondaryBlush));
+}
+
+.section-heading::after {
+  background: linear-gradient(to left, transparent, var(--color-secondaryBlush));
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
