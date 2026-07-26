@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "quote": "Siatara's PMP bootcamp gave me the structure and confidence I needed. I passed my exam on the first attempt and immediately applied the frameworks at work.",
+    "name": "Ayesha Khan",
+    "role": "Project Manager",
+    "initials": "AK"
+  },
+  {
+    "id": 2,
+    "quote": "The Agile coaching was practical and easy to follow. I now lead sprint planning and retrospectives with clarity, and my team delivers faster than ever.",
+    "name": "Fahim Raza",
+    "role": "Business Analyst",
+    "initials": "FR"
+  },
+  {
+    "id": 3,
+    "quote": "Her mentorship helped me grow from a team contributor to a confident Team Lead. The real-world examples made every concept click.",
+    "name": "Ansa Ali",
+    "role": "Team Lead",
+    "initials": "AA"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "PMP Certification Bootcamp",
+    "duration": "8 Weeks",
+    "description": "Complete PMP exam preparation with PMBOK principles, mock tests, and expert coaching."
+  },
+  {
+    "id": 2,
+    "title": "Scrum Master Crash Course",
+    "duration": "4 Weeks",
+    "description": "Become a confident Scrum Master with hands-on learning and real-world case studies."
+  },
+  {
+    "id": 3,
+    "title": "Agile Project Management Program",
+    "duration": "8 Weeks",
+    "description": "End-to-end Agile training to help you lead projects and deliver value consistently."
+  }
+]

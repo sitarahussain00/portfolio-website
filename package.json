@@ -1,0 +1,19 @@
+{
+  "name": "siatara-hussain-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PMP & Scrum coaching portfolio website for Siatara Hussain",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "start": "npm run start --prefix backend",
+    "install:all": "npm install && npm install --prefix frontend && npm install --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
+
+
